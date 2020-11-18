@@ -1,2 +1,2 @@
 # AlgoExpert.io solutions
- This contains most of the questions from AlgoExpert.io from all levels.
+ This contains solutions of most of the questions from AlgoExpert.io from all levels.
