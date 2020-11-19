@@ -30,7 +30,17 @@ class node :
                 self.right.insert(value)
 
 # 2) Initialze the tree by inserting some values
-tree = (node(10).insert(15).insert(5).insert(2).insert(5).insert(1).insert(15).insert(13).insert(22).insert(14))
+tree = (
+    node(10)
+    .insert(15)
+    .insert(5)
+    .insert(2)
+    .insert(5)
+    .insert(1)
+    .insert(13)
+    .insert(22)
+    .insert(14)
+)
 
 # 3) The 3rd param. in helper function is infinity which defines the current closest value
 def closestValueInBST(tree, target):
