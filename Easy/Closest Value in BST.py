@@ -9,10 +9,6 @@
 #finds the closest value to that target value contained in the BST. Assume
 #that there will only be one closest value.
 
-# Recurssive Method
-# Avg Time -> O(log n) | Space -> O(log n)
-# Worst Tiem -> O(n)   | Space -> O(n)
-# Space is not constant because we us the stack space
 # 1) First we create the class for the node
 class node :
     def __init__(self, value):
@@ -40,6 +36,10 @@ tree = (node(10).insert(15).insert(5).insert(2).insert(5).insert(1).insert(15).i
 def closestValueInBST(tree, target):
     return closestValueInBSTHelper(tree, target, float("inf"))
 
+# Recurssive Method
+# Avg Time -> O(log n) | Space -> O(log n)
+# Worst Tiem -> O(n)   | Space -> O(n)
+# Space is not constant because we us the stack space
 def closestValueInBSTHelper(tree, target, closest):
     if tree is None:
         return closest
@@ -57,7 +57,6 @@ def closestValueInBSTHelper(tree, target, closest):
 
 # Iterative Method
 # Time -> O(log n) | Space -> O(1)
-
 def closestValueInBST(tree, target):
     return closestValueInBSTHelper(tree, target, float("inf"))
 
