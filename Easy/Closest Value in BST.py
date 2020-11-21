@@ -9,40 +9,12 @@
 #finds the closest value to that target value contained in the BST. Assume
 #that there will only be one closest value.
 
-# 1) First we create the class for the node
 class node :
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
 
-    def insert(self, value):
-        if value < self.value:
-            if self.left == None:
-                self.left = node(value)
-            else :
-                self.left.insert(value)
-
-        else:
-            if self.right == None:
-                self.right = node(value)
-            else :
-                self.right.insert(value)
-
-# 2) Initialze the tree by inserting some values
-tree = (
-    node(10)
-    .insert(15)
-    .insert(5)
-    .insert(2)
-    .insert(5)
-    .insert(1)
-    .insert(13)
-    .insert(22)
-    .insert(14)
-)
-
-# 3) The 3rd param. in helper function is infinity which defines the current closest value
 def closestValueInBST(tree, target):
     return closestValueInBSTHelper(tree, target, float("inf"))
 
