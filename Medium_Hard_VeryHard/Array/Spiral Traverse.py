@@ -1,3 +1,4 @@
+# O(n*m) -> Time | O(1) -> Space
 def spiralTraverse(matrix):
     m, n = len(matrix), len(matrix[0])
     i, j = 0, 0
